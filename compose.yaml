@@ -1,0 +1,24 @@
+services:
+  postgres:
+    container_name: postgres-sql-pc
+    image: postgres
+    environment:
+      POSTGRES_USER: username
+      POSTGRES_PASSWORD: password
+      PGDATA: /var/lib/postgresql/data
+      POSTGRES_DB: pet_clinic
+    volumes:
+      - postgres:/data/postgres
+    ports:
+      - 5422:5432
+    networks:
+      - pet-clinic
+    restart: unless-stopped
+
+networks:
+  pet-clinic:
+    driver: bridge
+
+volumes:
+  postgres:
+    driver: local

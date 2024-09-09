@@ -1,0 +1,4 @@
+ACTIVE_PROFILE: dev
+DB_URL: jdbc:postgresql://localhost:5422/pet_clinic
+DB_USER: username
+DB_PASS: password
