@@ -1,4 +1,4 @@
-package me.nolanjames.petclinicapi.common.model;
+package me.nolanjames.petclinicapi.common.user.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -12,6 +12,7 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 @Inheritance(strategy = InheritanceType.JOINED)
+@Table(name = "_user")
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

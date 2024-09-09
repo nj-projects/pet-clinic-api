@@ -6,7 +6,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import me.nolanjames.petclinicapi.common.model.User;
+import me.nolanjames.petclinicapi.common.user.model.User;
 
 @Entity
 @Getter
